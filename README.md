@@ -1,5 +1,5 @@
 # Dotland Setup
 
 ```shell
-curl -O https://raw.github.com/jacobgroundwater/dot/master/setup.sh && bash setup.sh
+curl -s https://raw.github.com/jacobgroundwater/dot/master/setup.sh > $HOME/.setup.sh && bash $HOME/.setup.sh
 ```
