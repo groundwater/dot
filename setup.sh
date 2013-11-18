@@ -7,10 +7,12 @@ DIR=$HOME/$DOT
 if [[ ! -d "$DIR" ]]; then
   # on initial setup, clone the repo
   git clone git@github.com:jacobgroundwater/dot.git $DIR
-else
+elif [[ "$1" = '-f' ]]; then
   # force update against server
   # we stash changes just in case you want them
   (cd $DIR && git fetch --all && git stash && git reset --hard origin/master)
+else
+  echo "Use -f to update from server"
 fi
 
 # link everything to $HOME as a dotfile
