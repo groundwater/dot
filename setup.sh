@@ -6,11 +6,17 @@ DIR=$HOME/$DOT
 # fetch or update dot repo
 if [[ ! -d "$DIR" ]]; then
   # on initial setup, clone the repo
-  git clone git@github.com:jacobgroundwater/dot.git $DIR
+  git clone git@github.com:jacobgroundwater/dot.git $DIR &&\
+  git submodule update --init                            || exit 1
 elif [[ "$1" = '-f' ]]; then
   # force update against server
   # we stash changes just in case you want them
-  (cd $DIR && git fetch --all && git stash && git reset --hard origin/master)
+  (
+    cd $DIR                        &&\
+    git fetch --all && git stash   &&\
+    git reset --hard origin/master &&\
+    git submodule update --init
+  ) || exit 2
 else
   echo "Use -f to update from server"
 fi
