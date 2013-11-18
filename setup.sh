@@ -23,5 +23,8 @@ ls $DIR | while read f; do
     ecoh "FAIL"
 done
 
+echo "--> Updating Vundle"
+vim +BundleInstall +qall
+
 echo "--- Done"
 
