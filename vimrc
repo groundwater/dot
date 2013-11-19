@@ -32,6 +32,9 @@ autocmd vimenter * NERDTree
 set background=dark
 colorscheme solarized
 
+set expandtab
+set tabstop=2
+
 " close nerd tree if it's the only thing left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 

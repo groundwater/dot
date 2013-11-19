@@ -50,3 +50,6 @@ alias nave="~/.nave/nave.sh"
 
 tmux attach || tmux new
 
+EDITOR=$(which vim)
+DISPLAY=$(which vim)
+
