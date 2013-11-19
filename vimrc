@@ -14,6 +14,10 @@ Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on     " required!
 
-:set mouse=a
-:syntax enable
+set mouse=a
+
+syntax on
+filetype on
+
+au BufNewFile,BufRead *.dtrace setf dtrace
 
