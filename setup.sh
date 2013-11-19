@@ -7,7 +7,7 @@ DIR=$HOME/$DOT
 if [[ ! -d "$DIR" ]]; then
   # on initial setup, clone the repo
   git clone git@github.com:jacobgroundwater/dot.git $DIR &&\
-  git submodule update --init                            || exit 1
+  (cd $DIR && git submodule update --init)               || exit 1
 elif [[ "$1" = '-f' ]]; then
   # force update against server
   # we stash changes just in case you want them
