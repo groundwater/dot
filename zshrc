@@ -48,3 +48,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias nave="~/.nave/nave.sh"
 
+tmux attach || tmux new
+
