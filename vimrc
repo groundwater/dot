@@ -32,3 +32,6 @@ autocmd vimenter * NERDTree
 set background=dark
 colorscheme solarized
 
+" close nerd tree if it's the only thing left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
