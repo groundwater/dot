@@ -36,6 +36,12 @@ colorscheme solarized
 set expandtab
 set tabstop=2
 
+" From https://github.com/othiym23/.vim/blob/master/vimrc#L13-L17
+set backspace=indent,eol,start
+set autoindent
+set smartindent
+
+
 " open nerd tree if no other files specified
 autocmd vimenter * if !argc() | NERDTree | endif
 
