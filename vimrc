@@ -12,6 +12,7 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'plasticboy/vim-markdown'
 
 filetype plugin indent on     " required!
 
@@ -26,7 +27,7 @@ filetype on
 au BufNewFile,BufRead *.dtrace setf dtrace
 
 " open nerd tree on every open event
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " theme
 set background=dark
@@ -34,6 +35,9 @@ colorscheme solarized
 
 set expandtab
 set tabstop=2
+
+" open nerd tree if no other files specified
+autocmd vimenter * if !argc() | NERDTree | endif
 
 " close nerd tree if it's the only thing left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
