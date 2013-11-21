@@ -13,6 +13,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'airblade/vim-gitgutter'
 
 filetype plugin indent on     " required!
 
@@ -41,6 +42,11 @@ set backspace=indent,eol,start
 set autoindent
 set smartindent
 
+" line numbers
+set number
+
+" git gutter
+let g:gitgutter_sign_column_always = 1
 
 " open nerd tree if no other files specified
 autocmd vimenter * if !argc() | NERDTree | endif
