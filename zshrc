@@ -48,8 +48,12 @@ source $ZSH/oh-my-zsh.sh
 
 alias nave="~/.nave/nave.sh"
 
-tmux attach || tmux new
-
 EDITOR=$(which vim)
 DISPLAY=$(which vim)
+
+# become tmux
+if [[ -z "$TMUX" ]]; then
+  tmux list-sessions && exec tmux attach || exec tmux
+fi
+
 
