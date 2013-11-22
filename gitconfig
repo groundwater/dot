@@ -1,3 +1,5 @@
 [user]
 	name = Jacob Groundwater 
 	email = jacob@newrelic.com 
+[color]
+	ui = true

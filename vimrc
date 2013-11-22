@@ -14,6 +14,10 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'terryma/vim-multiple-cursors'
+
+" tmux and vim pane navigation
+Bundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " required!
 
@@ -36,6 +40,9 @@ colorscheme solarized
 
 set expandtab
 set tabstop=2
+
+" tab exists insert mode
+inoremap <Tab> <Esc>
 
 " From https://github.com/othiym23/.vim/blob/master/vimrc#L13-L17
 set backspace=indent,eol,start

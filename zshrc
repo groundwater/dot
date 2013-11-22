@@ -56,4 +56,5 @@ if [[ -z "$TMUX" ]]; then
   tmux list-sessions && exec tmux attach || exec tmux
 fi
 
+alias e=~/.dot/e
 
