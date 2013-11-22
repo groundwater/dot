@@ -8,10 +8,10 @@ DOT=~/.dot
   echo "Push Now?"
   read f
   cd $DOT
-  git push origin master
+  git push origin master || exit 1 
   echo "Pushed [continue?]"
   read f
-)
+) || exit 1
 
 vim $DOT &&\
 (
