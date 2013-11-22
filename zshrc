@@ -57,4 +57,4 @@ if [[ -z "$TMUX" ]]; then
 fi
 
 alias e=~/.dot/e
-
+alias global="ssh root@192.168.9.130"
