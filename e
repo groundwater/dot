@@ -16,10 +16,10 @@ DOT=~/.dot
 
 vim $DOT &&\
 (
+  cd $DOT
   git diff --exit-code || (
     echo "Update Git?"
     read f 
-    cd $DOT
     git add -u
     git add .
     git commit -m "Update on $(hostname)"
