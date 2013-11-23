@@ -29,7 +29,7 @@ syntax on
 filetype on
 
 " set dtrace highlighting to .dtrace extension
-au BufNewFile,BufRead *.dtrace setf dtrace
+au BufNewFile,BufRead *.dtrace set filetype=xml
 
 " open nerd tree on every open event
 " autocmd vimenter * NERDTree
@@ -43,6 +43,7 @@ set tabstop=2
 
 " tab exists insert mode
 inoremap <Tab> <Esc>
+nnoremap <Tab> i
 
 " From https://github.com/othiym23/.vim/blob/master/vimrc#L13-L17
 set backspace=indent,eol,start
