@@ -29,7 +29,7 @@ syntax on
 filetype on
 
 " set dtrace highlighting to .dtrace extension
-au BufNewFile,BufRead *.dtrace set filetype=xml
+au BufNewFile,BufRead *.dtrace set filetype=dtrace
 
 " open nerd tree on every open event
 " autocmd vimenter * NERDTree
