@@ -53,6 +53,9 @@ set smartindent
 " line numbers
 set number
 
+" FAAAST
+set ttyfast
+
 " git gutter
 let g:gitgutter_sign_column_always = 1
 
