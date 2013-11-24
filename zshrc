@@ -58,3 +58,8 @@ fi
 
 alias e=~/.dot/e
 alias global="ssh root@192.168.9.130"
+
+# utf-8 stuff
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
