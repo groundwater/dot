@@ -23,11 +23,10 @@ filetype plugin indent on     " required!
 
 " respond to mouse events
 set mouse=a
-if &term =~ '^screen'
+if &term =~ '^xterm-256color'
   " tmux knows the extended mouse mode
   set ttymouse=xterm2
 endif
-
 
 " enable syntax highlighting
 syntax on
