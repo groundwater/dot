@@ -15,6 +15,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'junegunn/vim-easy-align' 
 
 " tmux and vim pane navigation
 Bundle 'christoomey/vim-tmux-navigator'
