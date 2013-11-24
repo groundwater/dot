@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="re5et"
+ZSH_THEME="node"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -62,4 +62,3 @@ alias global="ssh root@192.168.9.130"
 # utf-8 stuff
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
-
