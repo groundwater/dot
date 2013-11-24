@@ -48,8 +48,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias nave="~/.nave/nave.sh"
 
-EDITOR=$(which vim)
-DISPLAY=$(which vim)
+export EDITOR=$(which vim)
+export DISPLAY=$(which vim)
 
 # become tmux
 if [[ -z "$TMUX" ]]; then
