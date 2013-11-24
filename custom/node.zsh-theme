@@ -14,5 +14,5 @@ function last {
 }
 
 PROMPT="$fg[cyan]\$(last)%n • \$(node -v) • %d \$(git_prompt) $reset_color
-[%h] %# "
+[%h] %m %# "
 
