@@ -56,6 +56,7 @@ set smartindent
 
 " line numbers
 set number
+set nowrap
 
 " FAAAST
 set ttyfast
