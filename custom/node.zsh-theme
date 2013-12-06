@@ -1,4 +1,5 @@
 function git_prompt {
+  if [[ -f ~/.nogit ]]; then return; fi
   git status >/dev/null 2>&1 || return;
   [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] &&
   echo -en "• "
