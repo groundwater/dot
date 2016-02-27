@@ -1,0 +1,13 @@
+https://github.com/jscappini/material.vim.git
+https://github.com/scrooloose/nerdtree.git
+git://github.com/godlygeek/tabular.git
+https://github.com/marijnh/tern_for_vim.git
+https://github.com/flazz/vim-colorschemes.git
+https://github.com/easymotion/vim-easymotion
+https://github.com/isRuslan/vim-es6.git
+git://github.com/tpope/vim-fugitive.git
+git://github.com/airblade/vim-gitgutter.git
+https://github.com/fatih/vim-go.git
+git://github.com/digitaltoad/vim-jade.git
+https://github.com/pangloss/vim-javascript.git
+git@github.com:moll/vim-node.git
